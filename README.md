@@ -1,0 +1,1 @@
+# senior-hw-AR-EN-pages
