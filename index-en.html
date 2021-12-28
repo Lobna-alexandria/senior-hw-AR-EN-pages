@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+<link  rel="stylesheet"  href="css/all.css">
+<link   rel="stylesheet" href="css/animate.min.css" /> 
+
+<link   rel="stylesheet"  href="css/hover.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<link   rel="stylesheet"  href="css/bootstrap.css" />
+<link   rel="stylesheet"  href="css/bootstrap.js" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+    <title>TreeHouse</title>
+    <link rel="icon" href="images/tree.jpg">
+
+    <style>
+    .fixed_icon{position: fixed;
+      z-index: 100;
+      height: 60px;
+      width: 60px;
+border-radius: 50%;
+right:20px;opacity: .9;
+top: 630px;background: #499416;
+background-color: rgb(40, 211, 114);
+-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 18px 5px rgba(238,239,232,0); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 18px 5px rgba(238,239,232,0);}
+
+.fixed_icon a{color: rgb(255, 255, 255);
+    font-size:30px;opacity: 1 !important;}
+
+#nav1 a{color: rgb(134, 134, 134);}
+
+
+.bordera{border: solid red;}
+
+.bordera-bl{border: solid blue;}
+
+.dark-img {filter: brightness(30%);
+    position: relative;
+
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+height: 100vh; }
+
+
+.img1{
+background-image: url(images/01.jpg);
+}
+
+.img2{
+background-image: url(images/03.jpg);
+}
+
+
+.bold-title{
+color: black;
+font-size: 35px;
+font-weight: 700;
+text-align: center;
+text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;}
+
+.bold-title:hover {color: rgb(65, 103, 173);}
+
+
+.smaller-title{
+    color: black;
+font-size: 16px;
+font-weight: 700;
+
+
+}
+
+/******************************************timeline**************************************************/
+
+
+#timeline{/*the middle thin line*/
+  height:2px;
+  width:15%;
+  background-color:#2da0df;
+  position:relative;
+  top: 2rem;
+}
+
+ .marker{/*the circles*/
+ 
+  color: rgb(54, 53, 53);
+  width: 80px; top: 20rem;
+  height: 80px;
+  
+  text-align: center;
+  position: relative;
+  border: solid;
+  padding: 11px;margin: auto;
+  border-radius: 50%;
+        }
+
+ 
+.timeline-icon.one {
+    background-color: transparent !important;
+}
+
+.timeline-icon.one i {font-size: 45px; }
+
+
+.mfirst{
+     top:0;
+     margin: 0 5rem 0 5rem;
+
+}
+
+.timeline-panel { /*text-box*/
+  margin-top: 50%;
+  margin-left: -7rem;
+	width: 300px;
+  height: 200px;
+  /*background-color: #b3bad1;*/
+  border-radius:2px;
+	position:relative;
+	text-align:center;
+  padding:10px;
+	
+  color: #000;
+}
+
+
+/**********************************************************timeline****************************************************/
+
+/*********************************************************media quiry*********************************************************/
+
+@media (max-width: 1500px) 
+
+ {
+    
+   
+    #timeline{
+    display: none;}
+
+    .mfirst{    
+     margin-top:  5rem ;
+     margin-bottom: 5rem ;}
+
+
+ .ball1,.ball2{ margin: auto; }
+
+
+.rec1{ margin: auto; top: 2rem; }
+.rec2{ margin: auto; top: -2rem; }
+
+
+.rec1,.rec2{width: 100%;height: auto;}
+
+
+.rec1 .after-left{   
+    top: -1.2rem;
+   margin: auto;
+    transform: rotate(180deg);
+}
+
+.rec2 .after-left2{  position: relative;
+   top : 4.2rem;
+   margin : auto;
+   transform : rotate(0deg);
+}
+
+.brands img{margin-top: 1rem;
+        margin-bottom: 1rem;
+}
+
+#nav1{background-color:transparent;position: absolute !important;top: 0; z-index: 10;
+  margin-left: 0;padding-left: 0;
+  
+}
+
+  #nav1 a{ color: white !important;}
+  #nav1 i{ color: white !important;}
+  #nav1 i:hover{transform: scale(1.5,1.5);
+     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 
+    0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;}
+
+
+    #nav1 span, #nav1 a:hover{color: yellow !important;}
+  #navbarNavAltMarkup {position: absolute;width: 100%;top: 6rem;left: 0;z-index: 100;}
+
+  #navbarNavAltMarkup{
+  animation: slideInLeft;
+  animation-duration:1s;
+ padding-left: 2rem;
+  
+ }
+  
+  
+ }
+
+ /******************************************************  end*media quiry  ******************************************************/
+
+
+
+ .after-left{
+
+    width: 0;
+    height: 0;
+    margin-right: auto;
+    margin-left: -1.7rem;
+    border-style: solid;
+    border-width: 19px 18px 0;
+   border-color: rgb(125, 197, 194) transparent transparent transparent;
+
+   /* border-color: rgb(235, 30, 30) transparent transparent transparent;*/
+
+
+    position: absolute;
+    right: 0;
+    top: 4.5rem;
+    left: 0;
+    transform: rotate(90deg);
+
+}
+
+.after-left2{ width: 0;
+    height: 0;
+    margin-left:37.5rem;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 19px 18px 0;
+    border-color: rgb(125, 197, 194) transparent transparent transparent;
+    position: absolute;
+    right: 0;
+    top: 4.5rem;
+    left: 0;
+    transform: rotate(-90deg);
+    }
+
+
+.ball1,.rec1,.ball2,.rec2{background-color: rgb(129, 206, 202);
+}
+
+.hvr-underline-from-left:before {
+ 
+  height: 1.5px;
+ 
+}
+
+.proff i:hover{
+  transform: scale(1.5,1.5);
+  color: #44c7e7;
+
+text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 
+12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5);}
+
+.relax i:hover{text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;}
+
+
+.footer2 i {
+   
+    border: 1px solid;
+    height: 45px;
+    width: 45px;
+   
+}
+
+.footer2 i:hover{color: chartreuse;}
+
+    </style>
+</head>
+<body>
+
+ <section >
+        <div class="fixed_icon align-middle text-center hvr-pop " ><a href="#nav1"><i class="fas fa-angle-double-up" ></i></a></div>
+
+        <nav id="nav1" class="navbar navbar-expand-md sticky-nav1  container-fluid  py-0" >
+         
+            <div class="row  w-100 illdy  py-4">
+      
+              <div class=" col logo1 my-0 row "> 
+               
+                <p > <span class="animate__animated animate__rotateInUpLeft hvr-pop fs-3    offset-1 col-6 text-success text-nowrap py-1" style="font-family: 'Lobster', cursive; ">  
+                 <i class="  fas fa-feather-alt p-2   bg-success text-light rounded-circle mx-2" ></i> 
+                 TREE-HOUSE </p>
+                
+             </span>
+             </div>
+      
+      
+      
+             <div class=" col navbar-collapse " id="navbarTogglerDemo03" >
+               
+            <div  class="navbar-toggler w-100 text-end text-success" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+              aria-label="Toggle navigation" style="cursor:pointer;">
+
+
+
+         <div class="row float-end my-auto"> 
+           <span class="col hvr-pulse  text-right fs-1  px-1 "><i class="fas fa-tree"></i></span> 
+          
+        </div>
+
+             </div>
+             
+             
+            <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
+            
+                           <a href="#home" class=" nav-link  hvr-underline-from-left mx-sm-3  px-0" style="color: rgb(134, 134, 134);">HOME</a>
+                           <a href="#about" class=" nav-link  mx-sm-3 hvr-underline-from-left px-0" style="color: rgb(134, 134, 134);">ABOUT</a>
+                           <a href="#Blog" class="  nav-link  mx-sm-3 hvr-underline-from-left px-0">BLOG</a>
+                           <a href="#Portfolio" class=" nav-link mx-sm-3 hvr-underline-from-left px-0">PORTFOLIO</a>                           
+                           <a href="#Contact" class=" nav-link mx-sm-3 text-nowrap hvr-underline-from-left px-0">CONTACT US</a>
+
+                           
+       
+            </div>
+         
+             
+
+          </div>
+          
+
+          <div class=" col-1 ">
+            <a href="index-ar.html" class="col  nav-link  text-success hvr-pop  px-0 mx-0" >عربي</a>
+            
+          </div>
+          
+
+
+
+
+        </nav>
+ </section>
+
+
+      <!-----------------------------------------------sec2-------lap photo----------------------------------------------------------------->
+ <section>
+
+        <div class="container-fluid "> <div class="row ">
+        
+
+        <div class="col px-0 img1 dark-img"> </div>
+
+        <div class=" text-center text-white  position-absolute " style=" top: 17.5rem;" >  
+            <div style="font-size: 70px; font-weight: 700; ">
+             <p class=" text-white">   CREATIVE DIGITAL </p>
+             <p > SOLUTION </p>
+            </div>
+ 
+ 
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+             <button class=" btn hvr-pop rounded-pill text-white px-4 py-3 " style="background-color: rgb(40, 211, 114);">VIEW PORTFOLIO</button>
+        </div>
+           
+          
+           
+        </div> </div>
+        
+        
+        
+ </section>
+
+    <!-----------------------------------------------sec3-------Proffissional services----------------------------------------------------------------->
+
+
+<section>
+
+<div class="container py-5 text-center px-5 proff">
+
+<p class="bold-title py-0">PROFFISSIONAL SERVICES</p>
+<p class="text-center py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+
+<div class="row py-5">
+
+<div class="col-12 col-md-4 px-4 ">
+    <i class="far fa-heart fs-1 py-4 hvr-pulse"></i>
+
+    <p class="smaller-title">BEAUTIFUL DESIGNS</p>
+    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur reiciendis tempora perferendis praesentium earum nihil, veniam atque delectus sunt. </P>
+</div>
+
+
+<div class="col-12 col-md-4 px-4" >
+    
+    <i class="fas fa-tablet-alt fs-1 py-4 hvr-pulse"></i>
+    <p class="smaller-title">RESPONSIVE WEB</p>
+    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur reiciendis tempora perferendis praesentium earum nihil, veniam atque delectus sunt. </P>
+</div>
+
+
+<div class="col-12 col-md-4 px-4">
+    
+    <i class="fas fa-chart-line fs-1 py-4 hvr-pulse"></i>
+    <p class="smaller-title">MARKETING TOOLS</p>
+    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur reiciendis tempora perferendis praesentium earum nihil, veniam atque delectus sunt. </P>
+</div>
+
+
+
+</div></div>
+
+</section>
+
+          <!-----------------------------------------------sec4-------sea photo----------------------------------------------------------------->
+
+<section >
+
+    <div class="container-fluid py-5 px-0 "> <div class="row m-0 px-0 ">
+
+       <div class=" col-md-4  px-0"><img src="images/02.jpg" alt="" class=" img w-100 vh-100 py-0 my-0 " ></div>
+
+
+
+
+       <div class=" col-md-8   m-0 py-0 p-0 m-0  text-start container relax" > 
+           <img src="images/03.jpg" alt="" class="position-relative w-100 vh-100 dark-img"> 
+
+        <div class="position-absolute text-white  px-5 " style="transform: translate(0, -43rem); ">
+            <p style="font-size: 45px; font-weight: 700; "> JUST RELAX <SPan style="color: chartreuse;">&</SPan></p>
+            <P style="font-size: 45px; font-weight: 700; ">LET'S DO THE HEAVY LIFTING</P>
+
+            <div class="fw-lighter fs-5  " >
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dolorem architecto est voluptatem animi nemo eum suscipit, </p>
+
+          <div class=" py-2 d-flex flex-row"> 
+             <div> <i  class=" far fa-check-circle px-3 fs-1 " ></i></div>
+               <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div> </div>
+            
+               <div class=" py-2 d-flex flex-row"> 
+                <div> <i  class=" far fa-check-circle px-3 fs-1 " ></i></div>
+                  <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div> </div>
+
+
+                  <div class=" py-2 d-flex flex-row"> 
+                    <div> <i  class=" far fa-check-circle px-3 fs-1 " ></i></div>
+                      <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div> </div>
+           
+
+       <button class=" btn hvr-pop rounded-pill text-white px-4 py-3 my-5 " style="background-color: rgb(40, 211, 114);">LEARN MORE</button>
+       </div></div>
+        
+             
+   
+       
+
+
+    </div> </div>
+
+</section>
+
+          <!-----------------------------------------------sec5-------latest project----------------------------------------------------------------->
+
+<section class="proj" >
+
+            <p class="bold-title py-0 my-0">LATEST PROJECTS</p>
+            <p class="text-center ">Lorem ipsum dolor sit adipisicing elit. </p>
+
+
+            <div class="container  text-center float-end"> 
+                <div class="row  ">
+           
+
+                <div class="col-12 col-md-6 p-5 my-5 text-start ">
+
+                  <p class="smaller-title">DEVELOPING A FRAMEWORK</p>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorem odit commodi 
+                      exercitationem, quisquam magnam, doloribus .</P>
+
+                  <!-- ---------------------the 3 titles on the left----------------------------------->
+
+                  <div class=" py-3 d-flex flex-row "> 
+                    <div > <i  class=" fas fa-dumpster px-3 py-3 fs-1 border border-dark border-3 rounded-circle hvr-pop" ></i></div>
+
+                       <div class="py-3 px-3"> 
+                           <p class="smaller-title my-0">E-Commerce Ready</p> 
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                  </div>
+                  
+                  
+                  <div class=" py-3 d-flex flex-row "> 
+                    <div > <i  class=" fas fa-laptop px-3 py-3 fs-1 border border-dark border-3 rounded-circle hvr-pop" ></i></div>
+                   
+                       <div class="py-2 px-3"> <p class="smaller-title my-0">Powerfull SEO Features</p> 
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                  </div>
+       
+       
+                  <div class=" py-3 d-flex flex-row "> 
+                    <div > <i  class=" fas fa-lock px-4 py-3 fs-1 border border-dark border-3 rounded-circle hvr-pop" ></i></div>
+                   
+                       <div class="py-2 px-3 "> <p class="smaller-title my-0">SECURE ENCRIPTION</p> 
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                  </div>
+
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta cumque labore officia doloresr laborum 
+              vero consectetur optio cum atque sint, praesentium autem alias inventore error?</p>
+                  <a href="" class="nav-link text-success fw-bold">VIEW DETAILS <i class="fas fa-arrow-right"></i></a>
+
+                </div>
+
+
+
+
+
+                <div class="col-12 col-md-6 px-0"><img src="images/04.jpg" alt="" class="w-100 vh-100  "></div>
+
+
+</div>
+</div>
+</section>
+
+<!---------------------------------------------------------sec6 timeline----------------------------------------------------------------------------->
+
+<section class="bg-light  py-5" style="clear: both;" >
+
+    <div class="container-fluid py-5 text-center px-5 ">
+    
+    <p class="bold-title py-0">CULTURE & VALUES</p>
+    <p class="text-center py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    
+    
+    <div class=" py-5  mx-auto w-75 outer-block">
+          
+
+             <div  class=" time-block row d-flex flex-row  mx-auto " >
+
+            <!-- This is the individual marker-->
+
+            <div class="col-12  marker mfirst timeline-icon one hvr-pop ">
+                <i class="fas fa-music "></i>
+                  <!-- This is the individual panel-->
+            <div class="timeline-panel ">
+                <p class="smaller-title my-2">WORK-LIFE BALANCE</p> 
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, corporis </p>
+              </div>
+            </div>
+
+            <div id="timeline" ></div>
+           
+           <!-- This is the individual marker-->
+           <div class="col-12  marker mfirst timeline-icon one hvr-pop ">
+            <i class="far fa-chart-bar"></i>
+              <!-- This is the individual panel-->
+            <div class="timeline-panel ">
+                <p class="smaller-title my-2">QUALITY OVER QUANTITY</p> 
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, corporis </p>
+          </div>
+        </div>
+              
+            
+        <div id="timeline" ></div>
+
+
+            <!-- This is the individual marker-->
+            <div class="col-12  marker mfirst timeline-icon one hvr-pop ">
+                <i class="far fa-star"></i>
+                  <!-- This is the individual panel-->
+            <div class="timeline-panel ">
+                <p class="smaller-title my-2">DELIVER EXCELLENCE</p> 
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, corporis </p>
+
+
+              </div>
+            </div>
+
+
+            </div>
+            <!-- / marker -->
+       
+</div></div>
+</section>
+
+<!---------------------------------------------------------sec7 our customers----------------------------------------------------------------------------->
+
+
+<section class="py-5">
+
+  <div class="container text-center px-5">
+  
+    <p class="bold-title py-0">OUR OWESOME CLIENTS</p>
+    <p class="text-center py-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+  
+  <!--********************************1st ball row*********************************-->
+
+  <div class="row py-5  w-75 mx-auto  ball-row">
+
+    <div class="col-4  mx-sm-3  ball1 shadow border rounded-circle " style="width: 12rem;height: 12rem;"></div>
+
+
+    <div class="col-8  text-start rec1 mx-sm-3 p-5  position-relative  shadow border ">     
+     
+    <p >"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo quae ut porro nobis hic ipsam assumenda?"</p>
+     <p class="text-success">Quo quae ut porro nobis hic ipsam assumenda?</p>
+
+  <div class="after-left" ></div>
+
+ </div>
+
+</div>
+
+<!--********************************2nd ball row*********************************-->
+
+<div class="row py-5  w-75 mx-auto  ball-row"> 
+
+ <div class="col-8  text-start rec2 mx-sm-3 p-5   position-relative shadow  border">     
+ 
+   <p>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo quae ut porro nobis hic ipsam assumenda? "</p>
+   <p class="text-success">Quo quae ut porro nobis hic ipsam assumenda?</p>
+   <div class="after-left2" ></div>
+ 
+</div>
+
+<div class="col-4  mx-sm-3  ball2 shadow  rounded-circle border " style="width: 12rem;height: 12rem;"></div>
+  
+
+</div>
+
+
+
+
+
+</div>
+</section>
+
+<!---------------------------------------------------------sec8 our customers----------------------------------------------------------------------------->
+
+<section >
+
+  <div class="container-fluid text-center px-5 py-5 text-white" style="background-color: rgb(138, 187, 89);">
+  
+
+  <p style="font-size: 35px;font-weight:700;">READY TO TALK ABOUT YOUR NEXT PROJECT ?</p>
+  <button type="button" class="btn btn-outline-light">CONTACT US</button>
+
+
+</div>
+</section>
+
+<!---------------------------------------------------------sec9 brands----------------------------------------------------------------------------->
+
+
+<section>
+
+  <div class="container-fluid text-center px-5 ">
+  
+   
+  <div class="row  mx-auto  py-3 brands mt-4" style="width: 60%;">
+
+    
+
+      
+      <div class="col-12 col-md-3"><img src="images/evanto.jpg" alt="" class=" w-100 h-50  "></div>
+
+      <div class="col-12 col-md-3"><img src="images/wordpress.jpg" alt="" class=" w-100 h-50 "></div>
+
+      <div class="col-12 col-md-3"><img src="images/tuts.jpg" alt="" class=" w-100 h-50"></div>
+
+      <div class="col-12 col-md-3"><img src="images/microlancer.jpg" alt="" class=" w-100 h-50"></div>
+
+
+  </div>
+
+
+</div></div>
+</section>
+
+<!---------------------------------------------------------sec10 footer----------------------------------------------------------------------------->
+
+
+<section >
+
+  <div class="container-fluid bg-dark px-5 text-white ">
+  
+   <div class="row py-5 mx-auto  text-center w-75">
+
+<div class="col-12 col-md-4 text-start py-2"> 
+  <p class="smaller-title text-white"> CONTACT US</p>
+ 
+  
+    
+    <div class="row py-1">
+      <div class="col-1  mx-2 px-0"><i class="fa fa-map-marker-alt fs-3 "></i></div>
+      <div class="col-4  fw-light px-0">55 Lorem ipsum, dolor adipisicing   </div>
+      
+    </div>
+
+    
+
+    <div class="row py-1">
+      <div class="col-1  mx-2 px-0"><i class="fas fa-mobile-alt   fs-2"></i></div>
+      <div class="col-10  fw-light px-0">(009)2233-5588-888  </div>
+      
+    </div>
+
+
+    <div class="row py-1">
+      <div class="col-1  mx-2 px-0"><i class="fas fa-envelope   fs-4"></i></div>
+      <div class="col-10 fw-light  px-0">Praesentium, est hic  </div>
+      
+    </div>
+
+
+</div>
+
+
+
+
+
+<div class="col-12 col-md-4 text-start py-2"><p class="smaller-title text-white">LATEST POSTS</p>
+
+
+
+  <div class="row py-1">
+    <div class="col-1  mx-2 px-0"><i class="far fa-newspaper   fs-4"></i></div>
+    <div class="col-10 fw-light  px-0">voluptatem expedita tenetur  </div>
+    
+  </div>
+  
+  
+  
+  <div class="row py-1">
+    <div class="col-1  mx-2 px-0"><i class="fas fa-image   fs-4"></i></div>
+    <div class="col-10 fw-light  px-0">voluptatem expedita tenetur aliquid  </div>
+    
+  </div>
+  
+  
+  
+  <div class="row py-1">
+    <div class="col-1  mx-2 px-0"><i class="far fa-newspaper   fs-4"></i></div>
+    <div class="col-10 fw-light  px-0">voluptatem expedita tenetur aliquid  </div>
+    
+  </div>
+  
+  
+  
+  <div class="row py-1">
+    <div class="col-1  mx-2 px-0"><i class="far fa-newspaper   fs-4"></i></div>
+    <div class="col-10 fw-light  px-0">voluptatem expedita tenetur aliquid </div>
+    
+  </div>
+  
+
+  
+  <div class="row py-1">
+    <div class="col-1  mx-2 px-0"><i class="fas fa-play   fs-4"></i></div>
+    <div class="col-10 fw-light  px-0">voluptatem expedita tenetur  </div>
+    
+  </div>
+
+
+</div>
+
+<div class="col-12 col-md-4 text-start py-2"><p class="smaller-title text-white">LATEST TWEETS</p>
+
+<div class="row">
+<div class="col-1  mx-2 px-0"><i class="fab fa-twitter me-3 fs-5"></i></div>
+<div class="col-9 fw-light  px-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quibusdam labore accusantium impedit cupiditate. </div>
+
+<div class="row">
+  <div class="col-1  mx-2 px-0"><i class="fab fa-twitter me-3 fs-5"></i></div>
+  <div class="col-9 fw-light  px-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quibusdam labore accusantium impedit cupiditate. </div>
+  
+  
+</div>
+
+
+</div>
+
+</div></div>
+</section>
+
+
+
+<!---------------------------------------------------------sec11 footer2----------------------------------------------------------------------------->
+
+<section class="py-4 footer2">
+
+  <div class="container ">
+  
+   
+  
+  <div class="row ">
+
+    <p class="col-12 col-md-4  text-muted my-auto py-1">@ CopyRight 2014 FreebiesXpress.com</p>
+
+    <div class="col-12 col-md-4 py-1">
+      <div class="d-flex offset-1 py-1">
+
+    <a  class="  text-white mx-1" href=""><i  class="fab fa-twitter py-3 px-3 bg-dark rounded-circle hvr-pop" ></i></a>
+    <a  class="  text-white mx-1" href=""><i  class="fab fa-facebook-f py-3 px-3 bg-dark rounded-circle hvr-pop" ></i></a>
+    <a  class="  text-white mx-1" href=""><i  class="fab fa-pinterest-p py-3 px-3 bg-dark rounded-circle hvr-pop" ></i></a>
+    <a  class="  text-white mx-1" href=""><i  class="fab fa-google-plus-g py-3 px-2 bg-dark text-start rounded-circle hvr-pop" ></i></a>
+  
+
+  </div></div>
+
+
+</div></div>
+</section>
+
+
+</body>
+</html>
